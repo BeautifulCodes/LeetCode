@@ -8,4 +8,4 @@ public:
         }
         return (char(xr+'a'));
     }
-};
+};	
