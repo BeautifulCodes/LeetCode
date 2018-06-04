@@ -6,13 +6,10 @@ public:
         while(i>=0 and j>=0){
             if(nums1[i] >= nums2[j]){
                 nums1[idx]=nums1[i];
-                nums1[i]=INT_MIN;
-                idx--;
-                i--;
+                idx--,i--;
             }else{
                 nums1[idx]=nums2[j];
-                idx--;
-                j--;
+                idx--,j--;
             }
         }
         while(i>=0){
@@ -25,6 +22,5 @@ public:
             idx--;
             j--;
         }
-        
     }
 };
